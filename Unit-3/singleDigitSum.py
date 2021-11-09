@@ -14,4 +14,4 @@ while flag:
             inter += ' ' + x + ' ' + '+'
         print(f'Digit sum of {num} ={inter[:-1]}= {total}')
         num = total
-print(f'{oriNum} takes {step} steps')
+print(f'Therefore {oriNum} takes {step} steps')

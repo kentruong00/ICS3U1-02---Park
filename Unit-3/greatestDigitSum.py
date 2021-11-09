@@ -1,6 +1,8 @@
 greatestNum = 0
 greatestSum = 0
-for x in range (10,21):
+int1 = int(input('enter lower bound: '))
+int2 = int(input('enter upper bound: '))
+for x in range (int1,int2+1):
     total = 0 
     for y in str(x):
         total += int(y)
