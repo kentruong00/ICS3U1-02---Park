@@ -7,15 +7,14 @@ ladderTop = [34,64,86]
 while play:
     roll = int(input())
     if not roll == 0:
+        place += roll
         if place + roll < 100:
-            place += roll
             if place in snakeTop:
                 place = snakeBot[snakeTop.index(place)]
             if place in ladderBot:
                 place = ladderTop[ladderBot.index(place)]
             print('you are on square',place)
         elif place + roll == 100:
-            place += roll
             print('you are on square',place)            
             print('You Win!')
         else:
